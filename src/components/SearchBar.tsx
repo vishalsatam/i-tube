@@ -16,7 +16,16 @@ interface SearchBarProps {
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({
-  query, setQuery, handleSearch, handleKeyPress, order, setOrder, videoDuration, setVideoDuration, videoDefinition, setVideoDefinition
+  query,
+  setQuery,
+  handleSearch,
+  handleKeyPress,
+  order,
+  setOrder,
+  videoDuration,
+  setVideoDuration,
+  videoDefinition,
+  setVideoDefinition,
 }) => {
   return (
     <Grid container spacing={2} justifyContent="center" style={{ marginTop: '20px' }}>
@@ -31,7 +40,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <Button onClick={handleSearch} color="primary">
+                <Button onClick={() => { handleSearch(); }} color="primary">
                   <SearchIcon />
                 </Button>
               </InputAdornment>
@@ -63,9 +72,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
             label="Duration"
           >
             <MenuItem value="any">Any</MenuItem>
-            <MenuItem value="short">Short (4 minutes)</MenuItem>
+            <MenuItem value="short">Short (&lt; 4 minutes)</MenuItem>
             <MenuItem value="medium">Medium (4-20 minutes)</MenuItem>
-            <MenuItem value="long">Long (20 minutes)</MenuItem>
+            <MenuItem value="long">Long (&gt; 20 minutes)</MenuItem>
           </Select>
         </FormControl>
       </Grid>
