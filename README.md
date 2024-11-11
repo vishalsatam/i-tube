@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Local Youtube - I like to call it I-Tube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was created because I was tired of the sensory overload
+caused due to the number of recommended videos available on the Youtube App.
 
-## Available Scripts
+I found myself constantly watching videos I wasn't really wanting to watch.
+But due to human addictive impulses, ended up in Youtube rabbit holes and kept
+watching one video after another. Eventually ending up with a lot of wasted time.
 
-In the project directory, you can run:
+This app is super minimalistic and just has a basic search without all the noise from recommended videos,
+comments, likes, subscriptions, history, recommendations, playlists, etc. The idea is that you are in control of what
+you want to watch and only see the videos that you're interested in.
 
-### `npm start`
+# Instructions to setup locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Update the .env file and set the env variable `YOUTUBE_API_KEY` to your API key.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You can find the instructions to generate the API key for the Youtube Data API here.
+https://developers.google.com/youtube/v3/getting-started
 
-### `npm test`
+Run `npm install` and then `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Enjoy!
